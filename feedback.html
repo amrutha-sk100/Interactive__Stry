@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="feedback.css" type="text/css">
+    <script src="feedback.js" type="text/javascript"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+        emailjs.init("yj-qvDRWQhrMj7Uc3");
+   })();
+</script>
+</head>
+<body>
+    <div class="form-container">
+        <div class="apple">
+        
+            <h1>Give us your feedback</h1>
+            <input type="text" id="fullName" placeholder="Full Name" required/><br/>
+            <input type="email" id="email_id" placeholder="Email Id" required/><br/>
+            <textarea id="message" placeholder="Message" required rows="8" cols="40"></textarea><br/>
+            <button onclick="SendMail()">Send</button>
+            </div>
+    </div>
+    <br >
+    <h4>If you don't want to give a feedback, <a href="dash.html">Click here</a>.</h4>
+</body>
+</html>
